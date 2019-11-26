@@ -180,3 +180,11 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-header (adds brief author info and license headers)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:header_field_author = 'Yuan Xiaoshuai'
+let g:header_field_author_email = 'yxshuai@gmail.com'
+let g:header_auto_add_header = 0
+map <F4> :AddHeader<CR>

@@ -50,6 +50,7 @@ vim-markdown https://github.com/plasticboy/vim-markdown
 gist-vim https://github.com/mattn/gist-vim
 vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
 vim-tex https://github.com/lervag/vimtex
+vim-header https://github.com/alpertuna/vim-header
 """.strip()
 # vim-coffee-script https://github.com/kchmck/vim-coffee-script
 # vim-less https://github.com/groenewege/vim-less
