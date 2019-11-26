@@ -23,7 +23,6 @@ bufexplorer https://github.com/jlanzarotta/bufexplorer
 ctrlp.vim https://github.com/ctrlpvim/ctrlp.vim
 nerdtree https://github.com/scrooloose/nerdtree
 open_file_under_cursor.vim https://github.com/amix/open_file_under_cursor.vim
-snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 tlib https://github.com/vim-scripts/tlib
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
 vim-colors-solarized https://github.com/altercation/vim-colors-solarized
@@ -50,6 +49,7 @@ mru.vim https://github.com/vim-scripts/mru.vim
 vim-markdown https://github.com/plasticboy/vim-markdown
 gist-vim https://github.com/mattn/gist-vim
 vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
+vim-tex https://github.com/lervag/vimtex
 """.strip()
 # vim-coffee-script https://github.com/kchmck/vim-coffee-script
 # vim-less https://github.com/groenewege/vim-less
@@ -62,6 +62,8 @@ vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
 
 # mayansmoke https://github.com/vim-scripts/mayansmoke
 # vim-pyte https://github.com/therubymug/vim-pyte
+
+# snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 
 GITHUB_ZIP = '%s/archive/master.zip'
 
