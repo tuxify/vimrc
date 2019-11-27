@@ -27,9 +27,8 @@ tlib https://github.com/vim-scripts/tlib
 vim-addon-mw-utils https://github.com/MarcWeber/vim-addon-mw-utils
 vim-colors-solarized https://github.com/altercation/vim-colors-solarized
 vim-indent-object https://github.com/michaeljsmith/vim-indent-object
-vim-markdown https://github.com/tpope/vim-markdown
-vim-snipmate https://github.com/garbas/vim-snipmate
 vim-snippets https://github.com/honza/vim-snippets
+ultisnips https://github.com/SirVer/ultisnips
 vim-surround https://github.com/tpope/vim-surround
 vim-expand-region https://github.com/terryma/vim-expand-region
 vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
@@ -49,7 +48,8 @@ mru.vim https://github.com/vim-scripts/mru.vim
 vim-markdown https://github.com/plasticboy/vim-markdown
 gist-vim https://github.com/mattn/gist-vim
 vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
-vim-tex https://github.com/lervag/vimtex
+vimtex https://github.com/lervag/vimtex
+tex-conceal.vim https://github.com/KeitaNakamura/tex-conceal.vim
 vim-header https://github.com/alpertuna/vim-header
 """.strip()
 # vim-coffee-script https://github.com/kchmck/vim-coffee-script
@@ -65,6 +65,8 @@ vim-header https://github.com/alpertuna/vim-header
 # vim-pyte https://github.com/therubymug/vim-pyte
 
 # snipmate-snippets https://github.com/scrooloose/snipmate-snippets
+# vim-snipmate https://github.com/garbas/vim-snipmate
+# vim-markdown https://github.com/tpope/vim-markdown
 
 GITHUB_ZIP = '%s/archive/master.zip'
 

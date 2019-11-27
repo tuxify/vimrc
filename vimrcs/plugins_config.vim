@@ -63,9 +63,16 @@ let g:user_zen_mode='a'
 """"""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
+" ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
+" snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 
+""""""""""""""""""""""""""""""
+" => UltiSnips
+""""""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 """"""""""""""""""""""""""""""
 " => Vim grep
@@ -180,6 +187,12 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => tex-conceal.vim (Extend the Conceal feature of Vim for LaTeX)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set conceallevel=2
+let g:tex_conceal='abdmg'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-header (adds brief author info and license headers)
