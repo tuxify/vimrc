@@ -199,5 +199,6 @@ let g:tex_conceal='abdmg'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:header_field_author = 'Yuan Xiaoshuai'
 let g:header_field_author_email = 'yxshuai@gmail.com'
+let g:header_field_timestamp_format = '%Y-%m-%d %H:%M'
 let g:header_auto_add_header = 0
 map <F4> :AddHeader<CR>
