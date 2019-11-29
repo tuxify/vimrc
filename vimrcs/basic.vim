@@ -1,13 +1,14 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer: 
-"       Amir Salihefendic — @amix3k
+"       Original: Amir Salihefendic — @amix3k
+"       Forked:   Yuan Xiaoshuai
 "
 " Awesome_version:
 "       Get this config, nice color schemes and lots of plugins!
 "
 "       Install the awesome version from:
 "
-"           https://github.com/amix/vimrc
+"           https://github.com/tuxify/vimrc
 "
 " Sections:
 "    -> General

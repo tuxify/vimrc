@@ -50,7 +50,6 @@ gist-vim https://github.com/mattn/gist-vim
 vim-python-pep8-indent https://github.com/Vimjas/vim-python-pep8-indent
 vimtex https://github.com/lervag/vimtex
 tex-conceal.vim https://github.com/KeitaNakamura/tex-conceal.vim
-vim-header https://github.com/alpertuna/vim-header
 """.strip()
 # vim-coffee-script https://github.com/kchmck/vim-coffee-script
 # vim-less https://github.com/groenewege/vim-less
@@ -67,6 +66,7 @@ vim-header https://github.com/alpertuna/vim-header
 # snipmate-snippets https://github.com/scrooloose/snipmate-snippets
 # vim-snipmate https://github.com/garbas/vim-snipmate
 # vim-markdown https://github.com/tpope/vim-markdown
+# vim-header https://github.com/alpertuna/vim-header
 
 GITHUB_ZIP = '%s/archive/master.zip'
 

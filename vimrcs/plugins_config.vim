@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Important:
-"       This requires that you install https://github.com/amix/vimrc !
+"       This requires that you install https://github.com/tuxify/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -11,7 +11,6 @@
 let s:vim_runtime = expand('<sfile>:p:h')."/.."
 call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
 call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-" call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
@@ -199,6 +198,5 @@ let g:tex_conceal='abdmg'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:header_field_author = 'Yuan Xiaoshuai'
 let g:header_field_author_email = 'yxshuai@gmail.com'
-let g:header_field_timestamp_format = '%Y-%m-%d %H:%M'
 let g:header_auto_add_header = 0
 map <F4> :AddHeader<CR>
