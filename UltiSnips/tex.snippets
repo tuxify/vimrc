@@ -50,45 +50,48 @@ snippet "art(icle)?" "Article template" br
 \end{document}
 endsnippet
 
+snippet url "nolinkurl" w
+\nolinkurl{$1}$0
+endsnippet
+
 priority 100
 snippet ... "ldots" iA
 \ldots
 endsnippet
 
-snippet => "implies" Ai
-\implies
-endsnippet
+# snippet => "implies" Ai
+# \implies
+# endsnippet
 
-snippet =< "implied by" Ai
-\impliedby
-endsnippet
+# snippet =< "implied by" Ai
+# \impliedby
+# endsnippet
 
-context "math()"
-snippet iff "iff" Ai
-\iff
-endsnippet
+# context "math()"
+# snippet iff "iff" Ai
+# \iff
+# endsnippet
 
-snippet mk "Math" wA
-$${1}$`!p
-if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
-	snip.rv = ' '
-else:
-	snip.rv = ''
-`$2
-endsnippet
+# snippet mk "Math" wA
+# $${1}$`!p
+# if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+# 	snip.rv = ' '
+# else:
+# 	snip.rv = ''
+# `$2
+# endsnippet
 
-snippet dm "Math" wA
-\[
-${1:${VISUAL}}
-.\] $0
-endsnippet
+# snippet dm "Math" wA
+# \[
+# ${1:${VISUAL}}
+# .\] $0
+# endsnippet
 
 snippet ali "Align" bA
 \begin{align*}
 	${1:${VISUAL}}
 .\end{align*}
 endsnippet
-
 
 context "math()"
 snippet // "Fraction" iA
@@ -131,36 +134,36 @@ snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
 endsnippet
 
 
-snippet sympy "sympyblock " w
-sympy $1 sympy$0
-endsnippet
+# snippet sympy "sympyblock " w
+# sympy $1 sympy$0
+# endsnippet
 
-priority 10000
-snippet 'sympy(.*)sympy' "sympy" wr
-`!p
-from sympy import *
-x, y, z, t = symbols('x y z t')
-k, m, n = symbols('k m n', integer=True)
-f, g, h = symbols('f g h', cls=Function)
-init_printing()
-snip.rv = eval('latex(' + match.group(1).replace('\\', '').replace('^', '**').replace('{', '(').replace('}', ')') + ')')
-`
-endsnippet
+# priority 10000
+# snippet 'sympy(.*)sympy' "sympy" wr
+# `!p
+# from sympy import *
+# x, y, z, t = symbols('x y z t')
+# k, m, n = symbols('k m n', integer=True)
+# f, g, h = symbols('f g h', cls=Function)
+# init_printing()
+# snip.rv = eval('latex(' + match.group(1).replace('\\', '').replace('^', '**').replace('{', '(').replace('}', ')') + ')')
+# `
+# endsnippet
 
-priority 1000
-snippet math "mathematicablock" w
-math $1 math$0
-endsnippet
+# priority 1000
+# snippet math "mathematicablock" w
+# math $1 math$0
+# endsnippet
 
-priority 10000
-snippet 'math(.*)math' "math" wr
-`!p
-import subprocess
-code = match.group(1)
-code = 'ToString[' + code + ', TeXForm]'
-snip.rv = subprocess.check_output(['wolframscript', '-code', code])
-`
-endsnippet
+# priority 10000
+# snippet 'math(.*)math' "math" wr
+# `!p
+# import subprocess
+# code = match.group(1)
+# code = 'ToString[' + code + ', TeXForm]'
+# snip.rv = subprocess.check_output(['wolframscript', '-code', code])
+# `
+# endsnippet
 
 snippet == "equals" iA
 &= $1 \\\\
@@ -170,23 +173,23 @@ snippet != "equals" iA
 \neq 
 endsnippet
 
-context "math()"
-snippet ceil "ceil" iA
-\left\lceil $1 \right\rceil $0
-endsnippet
+# context "math()"
+# snippet ceil "ceil" iA
+# \left\lceil $1 \right\rceil $0
+# endsnippet
 
-context "math()"
-snippet floor "floor" iA
-\left\lfloor $1 \right\rfloor$0
-endsnippet
+# context "math()"
+# snippet floor "floor" iA
+# \left\lfloor $1 \right\rfloor$0
+# endsnippet
 
-snippet pmat "pmat" iA
-\begin{pmatrix} $1 \end{pmatrix} $0
-endsnippet
+# snippet pmat "pmat" iA
+# \begin{pmatrix} $1 \end{pmatrix} $0
+# endsnippet
 
-snippet bmat "bmat" iA
-\begin{bmatrix} $1 \end{bmatrix} $0
-endsnippet
+# snippet bmat "bmat" iA
+# \begin{bmatrix} $1 \end{bmatrix} $0
+# endsnippet
 
 context "math()"
 snippet () "left( right)" iA
@@ -255,15 +258,15 @@ snippet sq "\sqrt{}" iA
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
 
-context "math()"
-snippet sr "^2" iA
-^2
-endsnippet
+# context "math()"
+# snippet sr "^2" iA
+# ^2
+# endsnippet
 
-context "math()"
-snippet cb "^3" iA
-^3
-endsnippet
+# context "math()"
+# snippet cb "^3" iA
+# ^3
+# endsnippet
 
 context "math()"
 snippet td "to the ... power" iA
@@ -382,20 +385,28 @@ snippet lll "l" iA
 endsnippet
 
 context "math()"
-snippet nabl "nabla" iA
+snippet nabla "nabla" w
 \nabla 
 endsnippet
 
-snippet div "div" iA
+context "math()"
+snippet div "div" w
 \nabla \cdot $1
 endsnippet
 
-snippet grad "grad" iA
+context "math()"
+snippet grad "grad" w
 \nabla $1
 endsnippet
 
-snippet bm "symbf" iA
+context "math()"
+snippet bm "symbf" w
 \symbf{$1}$0
+endsnippet
+
+context "math()"
+snippet bf "mathbf" w
+\mathbf{$1}$0
 endsnippet
 
 context "math()"
@@ -415,7 +426,7 @@ endsnippet
 
 priority 100
 context "math()"
-snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|perp)' "ln" rwA
+snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|perp)' "ln" rw
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
@@ -607,12 +618,12 @@ Let $\Omega \subset \C$ be open.
 endsnippet
 
 
-snippet HH "H" iA
-\mathbb{H}
-endsnippet
+# snippet HH "H" iA
+# \mathbb{H}
+# endsnippet
 
-snippet DD "D" iA
-\mathbb{D}
-endsnippet
+# snippet DD "D" iA
+# \mathbb{D}
+# endsnippet
 
 # vim:ft=snippets
